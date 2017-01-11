@@ -1,0 +1,59 @@
+.button
+    border: $button-border-width solid transparent
+    cursor: pointer
+    display: inline-block
+    font-weight: $button-font-weight
+    line-height: $button-line-height
+    user-select: none
+    vertical-align: middle
+    white-space: nowrap
+    +button-size($button-padding-y, $button-padding-x, $font-size-base)
+    +border-radius($button-border-radius)
+    +transition()
+
+    &:focus
+        outline: none
+
+
+// Alternate buttons
+.button.default
+    +button-variant($button-default-bg, $button-default-color, $button-default-border)
+.button.primary
+    +button-variant($button-primary-bg, $button-primary-color, $button-primary-border)
+.button.success
+    +button-variant($button-success-bg, $button-success-color, $button-success-border)
+.button.info
+    +button-variant($button-info-bg, $button-info-color, $button-info-border)
+.button.warning
+    +button-variant($button-warning-bg, $button-warning-color, $button-warning-border)
+.button.danger
+    +button-variant($button-danger-bg, $button-danger-color, $button-danger-border)
+
+// Outlined buttons variant
+.button.outline.default
+    +button-outline-variant($button-default-border)
+.button.outline.primary
+    +button-outline-variant($button-primary-bg)
+.button.outline.success
+    +button-outline-variant($button-success-bg)
+.button.outline.info
+    +button-outline-variant($button-info-bg)
+.button.outline.warning
+    +button-outline-variant($button-warning-bg)
+.button.outline.danger
+    +button-outline-variant($button-danger-bg)
+
+// Sizes
+.button.large
+    +button-size($button-large-padding-y, $button-large-padding-x, $font-size-large)
+.button.small
+    +button-size($button-small-padding-y, $button-small-padding-x, $font-size-small)
+.button.tiny
+    +button-size($button-tiny-padding-y, $button-tiny-padding-x, $font-size-small)
+
+// Block buttons
+.button.block
+    display: block
+    width: 100%
+.button.block + .button.block
+    margin-top: 1rem
