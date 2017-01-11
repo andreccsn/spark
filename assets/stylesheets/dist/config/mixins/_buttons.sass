@@ -1,0 +1,40 @@
+// Buttons
+
+// ALternate button styles
+=button-variant($background, $color, $border-color)
+    $active-background: darken($background, 10%)
+    $active-border:     darken($border-color, 12%)
+
+    background-color: $background
+    border-color: $border-color
+    color: $color
+
+    &:hover
+        background-color: $active-background
+        border-color: $active-border
+
+    &.active,
+    &:active
+        background-color: $active-background
+        border-color: $active-border
+        color: $color
+
+// Outlined buttons style
+
+=button-outline-variant($color, $color-hover: #FFF)
+    background: transparent
+    border-color: $color
+    color: $color
+
+    &:active,
+    &:hover
+        background-color: $color
+        border-color: $color
+        color: $color-hover
+
+// Define button size's
+
+=button-size($padding-y, $padding-x, $font-size, $border-radius: $button-border-radius)
+    +border-radius($border-radius)
+    font-size: $font-size
+    padding: $padding-y $padding-x

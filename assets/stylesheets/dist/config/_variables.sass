@@ -1,0 +1,195 @@
+// Grid's
+$gutter:            15px
+$grid-columns:      12
+
+$xs-breakpoint:     480px
+$sm-breakpoint:     768px
+$md-breakpoint:     992px
+$lg-breakpoint:     1200px
+
+// Colors
+// Start with assigning color names to specific hex values.
+$white:  #fff !default
+$black:  #000 !default
+$red:    #d9534f !default
+$orange: #f0ad4e !default
+$yellow: #ffd500 !default
+$green:  #5cb85c !default
+$blue:   #0275d8 !default
+$teal:   #5bc0de !default
+$pink:   #ff5b77 !default
+$purple: #613d7c !default
+
+// Create grayscale
+$gray-dark:                 #292b2c !default
+$gray:                      #464a4c !default
+$gray-light:                #636c72 !default
+$gray-lighter:              #eceeef !default
+$gray-lightest:             #f7f7f9 !default
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $blue !default
+$brand-success:             $green !default
+$brand-info:                $teal !default
+$brand-warning:             $orange !default
+$brand-danger:              $red !default
+$brand-inverse:             $gray-dark !default
+
+// Body
+$body-bg:       $white !default
+$body-color:    $gray !default
+
+$border-width:      1px !default
+$border-radius:     3px !default
+
+// Fonts
+$font-family-sans-serif:    -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !default
+$font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default
+$font-family-base:          $font-family-sans-serif !default
+
+$font-size-base:        1.4rem !default
+$font-weight-normal:    normal !default
+$font-weight-bold:      bold !default
+$line-height-base:      1.5 !default
+
+$font-size-h1:      5.2rem !default
+$font-size-h2:      4.4rem !default
+$font-size-h3:      3.6rem !default
+$font-size-h4:      2.8rem !default
+$font-size-h5:      2rem !default
+$font-size-h6:      1.2rem !default
+
+$font-size-large:   2rem !default
+$font-size-small:   1.2rem !default
+$font-size-tiny:   1rem !default
+
+// Links
+$link-color:            #337ab7 !default
+$link-hover-color:      #23527c !default
+$link-text-decoration:  none !default
+
+// States
+$state-success-text:             #3c763d !default
+$state-success-bg:               #dff0d8 !default
+$state-success-border:           darken($state-success-bg, 5%) !default
+
+$state-info-text:                #31708f !default
+$state-info-bg:                  #d9edf7 !default
+$state-info-border:              darken($state-info-bg, 7%) !default
+
+$state-warning-text:             #8a6d3b !default
+$state-warning-bg:               #fcf8e3 !default
+$mark-bg:                        $state-warning-bg !default
+$state-warning-border:           darken($state-warning-bg, 5%) !default
+
+$state-danger-text:              #a94442 !default
+$state-danger-bg:                #f2dede !default
+$state-danger-border:            darken($state-danger-bg, 5%) !default
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-x:             2rem !default
+$alert-padding-y:             1.2rem !default
+$alert-margin-bottom:         1rem !default
+$alert-border-radius:         $border-radius !default
+$alert-link-font-weight:      $font-weight-bold !default
+$alert-border-width:          $border-width !default
+
+$alert-success-bg:            $state-success-bg !default
+$alert-success-text:          $state-success-text !default
+$alert-success-border:        darken($state-success-border, 5%) !default
+
+$alert-info-bg:               $state-info-bg !default
+$alert-info-text:             $state-info-text !default
+$alert-info-border:           darken($state-info-border, 5%) !default
+
+$alert-warning-bg:            $state-warning-bg !default
+$alert-warning-text:          $state-warning-text !default
+$alert-warning-border:        darken($state-warning-border, 5%) !default
+
+$alert-danger-bg:             $state-danger-bg !default
+$alert-danger-text:           $state-danger-text !default
+$alert-danger-border:         darken($state-danger-border, 5%) !default
+
+// Buttons
+$button-border-width: $border-width !default
+$button-border-radius:  $border-radius !default
+
+$button-font-size:      1.6rem !default
+$button-font-weight:    $font-weight-normal !default
+$button-line-height:    1.25 !default
+
+$button-padding-x:      1rem !default
+$button-padding-y:      .7rem !default
+
+$button-large-padding-x:      2rem !default
+$button-large-padding-y:      1rem !default
+
+$button-small-padding-x:      .8rem !default
+$button-small-padding-y:      .4rem !default
+
+$button-tiny-padding-x:      .5rem !default
+$button-tiny-padding-y:      .13rem !default
+
+$button-primary-color:      $white !default
+$button-primary-bg:         $brand-primary !default
+$button-primary-border:     $button-primary-bg !default
+
+$button-default-color:      $gray-dark !default
+$button-default-bg:         $white !default
+$button-default-border:     #ccc !default
+
+$button-success-color:      $white !default
+$button-success-bg:         $brand-success !default
+$button-success-border:     $button-success-bg !default
+
+$button-info-color:      $white !default
+$button-info-bg:         $brand-info !default
+$button-info-border:     $button-info-bg !default
+
+$button-warning-color:      $white !default
+$button-warning-bg:         $brand-warning !default
+$button-warning-border:     $button-warning-bg !default
+
+$button-danger-color:      $white !default
+$button-danger-bg:         $brand-danger !default
+$button-danger-border:     $button-danger-bg !default
+
+// Forms
+$enable-input-border-radius: true !default
+
+$input-margin-top:      .5rem !default
+$input-padding-x:       1.2rem !default
+$input-padding-y:       .8rem !default
+
+$input-padding-x-large: 1.3rem !default
+$input-padding-y-large: .9rem !default
+
+$input-padding-x-small: .7rem !default
+$input-padding-y-small: .3rem !default
+
+$input-line-height:     1.25 !default
+
+$input-bg:              $white
+$input-bg-disabled:     $gray-light !default
+
+$input-color: $gray !default
+$input-border-color: rgba($black, .15) !default
+$input-border-width: $border-width !default
+$input-border-radius: $border-radius !default
+
+$input-bg-focus: $input-bg !default
+$input-border-focus: lighten($brand-primary, 25%) !default
+$input-color-focus: $input-color !default
+
+$input-color-placeholder: $gray-light !default
+
+$input-height:               (($font-size-base * $input-line-height) + ($input-padding-y * 2)) !default
+$input-height-large:         (($font-size-large * $input-line-height) + ($input-padding-y-large * 2)) !default
+$input-height-small:         (($font-size-small * $input-line-height) + ($input-padding-y-small * 2)) !default
+
+$input-transition: border-color ease-in-out .15s
+
+$form-group-margin-bottom: 1rem !default

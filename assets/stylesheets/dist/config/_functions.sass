@@ -1,0 +1,3 @@
+// Calculate the width of a column based on grid columns
+@function c-grid($column : 1)
+    @return unquote(($column / $grid-columns) * 100 + "%")

@@ -1,0 +1,78 @@
+/**
+ * Normalize rules
+ * @author André Cândido <candidocarvalho.andre@gmail.com>
+ * @version 1.0
+ * @date 02.10.2016
+ */
+
+*, 
+*:before,
+*:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html, body, address, aside, article, footer,
+header, nav, section,
+a, div, img, h1, h2, h3,
+h4, h5, h6, ol, ul, p, span,
+table, thead, tbody, tfoot, 
+tr, th, td
+    border: 0
+    margin: 0
+    padding: 0
+
+html
+    font-size: 62.5%
+
+body
+    background: $body-bg
+    color: $body-color
+    font-family: $font-family-base
+    font-size: $font-size-base
+    font-weight: $font-weight-normal
+    line-height: $line-height-base
+
+section, 
+article, 
+address,
+nav, 
+header, 
+footer, 
+main,
+div
+    display: block
+
+a
+    color: $link-color
+    text-decoration: $link-text-decoration
+    &:hover
+        color: $link-hover-color
+
+label
+    display: inline-block
+
+h1, 
+h2, 
+h3,
+h4, 
+h5, 
+h6
+    color: inherit
+
+p 
+    display: block
+    margin-bottom: 1rem
+
+span, label
+    display: inline-block
+
+ul, ol
+    list-style: none
+
+strong, b
+    font-weight: $font-weight-bold
+
+\:focus,
+\:active
+    outline: 0

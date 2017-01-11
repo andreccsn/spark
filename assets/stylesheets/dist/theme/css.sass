@@ -1,0 +1,94 @@
+@import ../config/variables
+@import ../config/functions
+@import ../config/mixins/all
+@import variables
+
+body
+    font-size: 1.6rem
+
+@media screen and (min-width: $sm-breakpoint)
+    .container
+        max-width: 750px
+
+@media screen and (min-width: $md-breakpoint)
+    .container
+        max-width: 980px
+
+@media screen and (min-width: $lg-breakpoint)
+    .container
+        max-width: 1180px
+
+// Header
+.navbar
+    line-height: 5rem
+
+// Brand
+.brand
+    color: #373a3c
+    display: inline-block
+    font-family: 'Hind Madurai'
+    font-weight: 600
+    margin-right: 15px
+    text-transform: uppercase
+
+// Título destaque 
+.hero-title
+    background: radial-gradient(circle at 1.98% 89.01%,#7474BF,transparent 100%),radial-gradient(circle at 98.02% 21.98%,#348AC7,transparent 100%),radial-gradient(circle at 50% 50%,#0cc285,#0cc285 100%)
+    margin-bottom: 4rem
+    padding-bottom: 3rem
+    padding-top: 5rem
+
+.hero-title h1
+    color: #fff
+    font-size: 6.4rem
+    letter-spacing: -.2rem
+
+.hero-title .lead
+    color: #fff
+    font-family: $raleway-font-family
+    font-size: 2.4rem
+    font-weight: 300
+    line-height: 1.3
+    margin-right: 30rem
+
+// width of main content
+.content
+    +grid-column(9)
+
+// page title
+.page-title
+    font-size: 4.6rem
+    line-height: 1.1
+.page-title+p
+    font-size: 2rem
+    font-weight: 300
+
+// sub-titles
+.content h2:not(:first-child)
+    margin-bottom: $gutter
+    margin-top: $gutter
+
+
+h1,h2,
+h3,h4,
+h5,h6
+    font-family: $raleway-font-family
+
+// sidebar
+aside
+    +grid-column(3)
+
+// Example box
+.sp-example
+    background: $white
+    border: .2rem solid #f5f2f0
+    border-top-left-radius: .5rem
+    border-top-right-radius: .5rem
+    margin: 0
+    padding: 2rem
+
+pre
+    margin: 0 !important
+    padding: 2rem !important
+    
+
