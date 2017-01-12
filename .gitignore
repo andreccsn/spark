@@ -1,0 +1,5 @@
+.DS_STORE
+/assets/stylesheets/.sass-cache
+/assets/stylesheets/dist/theme
+/assets/stylesheets/src
+/assets/stylesheets/vendor

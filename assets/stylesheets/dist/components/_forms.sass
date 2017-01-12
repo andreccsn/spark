@@ -1,0 +1,38 @@
+// Forms
+
+.form-group
+    display: block
+    margin-bottom: $form-group-margin-bottom
+    width: 100%
+
+.form-group.check label
+    display: block
+    width: 100%
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea
+    background: $input-bg
+    border: $input-border-width solid $input-border-color
+
+    @if $enable-input-border-radius
+        border-radius: $input-border-radius
+    @else
+        border-radius: 0
+
+    color: $input-color
+    display: block
+    font-size: $font-size-base
+    font-weight: $font-weight-normal
+    line-height: $input-line-height
+    // height: $input-height
+    margin-top: $input-margin-top
+    padding: $input-padding-y $input-padding-x
+    +transition($property: border-color, $delay: .15s, $easing: ease-in-out)
+    width: 100%
+
+    &:focus
+        background: $input-bg-focus
+        border-color: $input-border-focus
+        color: $input-color-focus
+        outline: none
