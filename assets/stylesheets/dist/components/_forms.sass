@@ -9,9 +9,7 @@
     display: block
     width: 100%
 
-input:not([type="radio"]):not([type="checkbox"]),
-select,
-textarea
+.field
     background: $input-bg
     border: $input-border-width solid $input-border-color
 
@@ -36,3 +34,9 @@ textarea
         border-color: $input-border-focus
         color: $input-color-focus
         outline: none
+
+// Customize appearance of select's
+select
+    -webkit-appearance: none
+    appearance: none
+    

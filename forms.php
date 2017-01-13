@@ -11,19 +11,19 @@
 <form>
     <div class="form-group">
         <label for="name">Nome</label>
-        <input type="text" name="name" id="name" class="form-field" placeholder="Digite seu nome completo">
+        <input type="text" name="name" id="name" class="field" placeholder="Digite seu nome completo">
     </div>
     <div class="form-group">
         <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" class="form-field" placeholder="Seu endereço de e-mail">
+        <input type="text" name="email" id="email" class="field" placeholder="Seu endereço de e-mail">
     </div>
     <div class="form-group">
         <label for="password">Senha</label>
-        <input type="text" name="password" id="password" class="form-field" placeholder="Entre 8-12 caracteres">
+        <input type="text" name="password" id="password" class="field" placeholder="Entre 8-12 caracteres">
     </div>
     <div class="form-group">
         <label for="select-example">Exemplo de select</label>
-        <select id="select-example" class="form-field">
+        <select id="select-example" class="field">
             <option value="">-- Selecione</option>
             <option value="">Valor 1</option>
             <option value="">Valor 2</option>
@@ -31,7 +31,7 @@
     </div>
     <div class="form-group">
         <label for="textarea-example">Exemplo textarea</label>
-        <textarea id="textarea-example" class="form-field" rows="4"></textarea>
+        <textarea id="textarea-example" class="field" rows="4"></textarea>
     </div>
     <legend>Radio Buttons</legend>
     <div class="form-group check">
