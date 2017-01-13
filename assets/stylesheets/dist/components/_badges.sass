@@ -1,0 +1,42 @@
+// Badges
+
+.badge
+    background: $badge-default-bg
+    +border-radius($badge-border-radius)
+    color: $badge-color
+    display: inline-block
+    font-size: $badge-font-size
+    font-weight: $badge-font-weight
+    padding: $badge-padding-y $badge-padding-x
+
+.badge.primary
+    +badge-variant($badge-primary-bg)
+.badge.success
+    +badge-variant($badge-success-bg)
+.badge.warning
+    +badge-variant($badge-warning-bg)
+.badge.info
+    +badge-variant($badge-info-bg)
+.badge.danger
+    +badge-variant($badge-danger-bg)
+
+.badge.rounded
+    +border-radius($badge-rounded-border-radius)
+    padding: $badge-padding-y $badge-rounded-padding-x
+
+// Outline variant
+.badge.outline
+    +badge-outline-variant(lighten($badge-default-bg, 10%))
+    border: $badge-outline-border-width solid $badge-default-bg
+
+// Contextual variants
+.badge.outline.primary
+    +badge-outline-variant($badge-primary-bg)
+.badge.outline.success
+    +badge-outline-variant($badge-success-bg)
+.badge.outline.info
+    +badge-outline-variant($badge-info-bg)
+.badge.outline.warning
+    +badge-outline-variant($badge-warning-bg)
+.badge.outline.danger
+    +badge-outline-variant($badge-danger-bg)

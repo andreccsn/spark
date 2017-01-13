@@ -6,7 +6,9 @@
             <a href="" class="nav-link">Components</a>
             <ul>
                 <li><a href="alerts.php">Alerts</a></li>
+                <li><a href="badges.php">Badges</a></li>
                 <li><a href="buttons.php">Buttons</a></li>
+                <li><a href="cards.php">Cards</a></li>
                 <li><a href="forms.php">Forms</a></li>
                 <li><a href="tables.php">Tables</a></li>
             </ul>
