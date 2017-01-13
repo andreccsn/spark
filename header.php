@@ -13,7 +13,7 @@
         
         <link rel="stylesheet" href="assets/stylesheets/vendor/prism.css" media="screen">
         <link rel="stylesheet" href="assets/stylesheets/src/spark.css" media="screen">
-        <link rel="stylesheet" href="assets/stylesheets/src/css.css?v=1.1.0" media="screen">
+        <link rel="stylesheet" href="assets/stylesheets/src/css.css" media="screen">
     </head>
     <body>
         <header class="header">

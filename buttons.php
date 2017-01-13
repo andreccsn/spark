@@ -9,7 +9,7 @@
 <p></p>
 
 <h2>Examples</h2>
-<div class="sp-example">
+<div class="sample-box">
     <button type="button" class="button default">Default</button>
     <button type="button" class="button primary">Primary</button>
     <button type="button" class="button success">Success</button>
