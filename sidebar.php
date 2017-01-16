@@ -10,6 +10,7 @@
                 <li><a href="buttons.php">Buttons</a></li>
                 <li><a href="cards.php">Cards</a></li>
                 <li><a href="forms.php">Forms</a></li>
+                <li><a href="pagination.php">Pagination</a></li>
                 <li><a href="tables.php">Tables</a></li>
             </ul>
         </li>

@@ -1,0 +1,47 @@
+.pagination-nav
+    &.center
+        text-align: center
+
+    &.right
+        text-align: right
+
+.pagination
+    display: inline-block
+    padding: 0
+    list-style: none
+
+.page-item
+    float: left
+    
+    &:first-child
+        .page-link
+            margin-left: 0
+            +border-left-radius($pagination-border-radius)
+    &:last-child
+        .page-link
+            +border-right-radius($pagination-border-radius)
+
+    &.current .page-link
+        background-color: $pagination-current-bg
+        border-color: $pagination-current-border
+        color: $pagination-current-color
+        z-index: 2
+
+    &.disabled .page-link
+        background-color: $pagination-disabled-bg
+        border-color: $pagination-disabled-border
+        color: $pagination-disabled-color
+
+.page-link
+    background-color: $pagination-bg
+    border: $pagination-border-width solid $pagination-border-color
+    color: $pagination-color
+    display: block
+    line-height: $pagination-line-height
+    margin-left: -1px
+    padding: $pagination-padding-y $pagination-padding-x
+    position: relative
+    +transition($property: all, $delay: .1s, $easing: ease-in-out)
+    &:hover
+        background-color: $pagination-hover-bg
+        color: $pagination-hover-color
